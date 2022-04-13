@@ -6,9 +6,7 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 
-const Hello = () => import(/* webpackChunkName: "apply" */ '@/views/hello');
-const Demo = () => import(/* webpackChunkName: "demo" */ '@/views/demo');
-const VueView = () => import(/* webpackChunkName: "demo" */ '@/views/vueView');
+const Main = () => import(/* webpackChunkName: "apply" */ '@/views/main');
 const Error = () => import(/* webpackChunkName: "error" */ '@/views/error');
 
 Vue.use(Router);
@@ -16,28 +14,10 @@ Vue.use(Router);
 const routes = [
   {
     path: '/',
-    name: 'hello',
-    component: Hello,
+    name: 'Main',
+    component: Main,
     meta: {
       title: '首页'
-    }
-  },
-  {
-    path: '/demo',
-    name: 'demo',
-    component: Demo,
-    meta: {
-      title: '组件Demo_1', // 标题
-      requireAuth: false, // 登录权限
-      keepAlive: false,
-    }
-  },
-  {
-    path: '/vueView',
-    name: 'vueView',
-    component: VueView,
-    meta: {
-      title: 'CLI3默认页'
     }
   },
   {
