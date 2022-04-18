@@ -1,6 +1,5 @@
 {
-  "name": "vue-h5-pro",
- 
+  "name": "NFT-EXPERT",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -14,8 +13,11 @@
     "fastclick": "^1.0.6",
     "lib-flexible": "^0.3.2",
     "mint-ui": "^2.2.13",
+    "qrcodejs2": "^0.0.2",
     "vue": "^2.6.10",
+    "vue-clipboard2": "^0.3.3",
     "vue-router": "^3.0.3",
+    "vue-simple-search-dropdown": "^1.0.1",
     "vuex": "^3.0.1"
   },
   "devDependencies": {

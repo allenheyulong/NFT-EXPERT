@@ -11,6 +11,7 @@ import store from './stores';
 import * as filters from './filters/';
 import './services';
 import 'lib-flexible';
+import VueClipboard from 'vue-clipboard2'
 
 import './styles/main.less';
 
@@ -23,6 +24,7 @@ Vue.config.errorHandler = (err, vm, info) => {
 };
 Vue.config.devtools = process.env.NODE_ENV === 'development';
 Vue.config.productionTip = process.env.NODE_ENV === 'production';
+Vue.config.$copyText = VueClipboard;
 
 window.EventBus = new Vue();
 

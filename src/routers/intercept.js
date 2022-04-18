@@ -7,6 +7,7 @@ import router from './index';
 
 // 路由导航守卫
 router.beforeEach((to, from, next) => {
+  debugger
   // 登录权限
   if (to.meta.requireAuth) { // 判断是否校验登录权限
     if (!window.myVue.userName) { // 判断是否登录，根据实际业务处理
